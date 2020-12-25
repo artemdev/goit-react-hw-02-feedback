@@ -1,9 +1,14 @@
 
-export default function Section({title="Empty title", children}) {
+export default function Section({title="Empty title", children, className}) {
     return (
-        <h4>
-            {title}
-            {children}
-        </h4>
+        <div>
+            <h2>
+                {title}
+            </h2>
+            <section className={className}>
+                {children}
+            </section>
+        </div>
+        
     )
 }
